@@ -26,7 +26,7 @@ def makeModel():
 
     opt.data = 'data/coco.data'
     opt.weights =  'modelzoo/coco2017-0.241078ap-model.pth'
-    
+
     cfg = utils.utils.load_datafile(opt.data)
     #assert os.path.exists(opt.weights), "请指定正确的模型路径"
     #assert os.path.exists(opt.img), "请指定正确的测试图像路径"
@@ -90,7 +90,7 @@ def print_test(frame, mod, cfg, device):
 
 mod, cfg, device = makeModel()
 prev_frame_time = new_frame_time = 0
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 if not cap.isOpened():
     raise IOError("We cannot open webcam")
 
