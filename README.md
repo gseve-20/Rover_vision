@@ -1,7 +1,7 @@
 # Rover-specific info:
 ## Dependent installation
 Make sure you have Python 3.6
-  * PIP
+* PIP
   ```
   pip3 install -r requirements.txt
   ```
