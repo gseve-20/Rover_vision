@@ -15,14 +15,18 @@ def makeModel():
     #print("Called")
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data', type=str, default='', 
+    """parser.add_argument('--data', type=str, default='', 
                         help='Specify training profile *.data')
     parser.add_argument('--weights', type=str, default='', 
                         help='The path of the .pth model to be transformed')
     parser.add_argument('--img', type=str, default='', 
-                        help='The path of test image')
+                        help='The path of test image')"""
 
     opt = parser.parse_args()
+
+    opt.data = 'data/coco.data'
+    opt.weights =  'modelzoo/coco2017-0.241078ap-model.pth'
+    
     cfg = utils.utils.load_datafile(opt.data)
     #assert os.path.exists(opt.weights), "请指定正确的模型路径"
     #assert os.path.exists(opt.img), "请指定正确的测试图像路径"

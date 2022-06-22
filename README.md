@@ -1,3 +1,20 @@
+# Rover-specific info:
+## Dependent installation
+  * PIP
+  ```
+  pip3 install -r requirements.txt
+  ```
+## Test
+* Picture test
+  ```
+  python3 test.py --data data/coco.data --weights modelzoo/coco2017-0.241078ap-model.pth --img img/000139.jpg
+  ```
+* Webcam test
+  ```
+  python3 testYOLOCam.py --data data/coco.data --weights modelzoo/coco2017-0.241078ap-model.pth --img img/000139.jpg
+  ```
+
+
 # :zap:Yolo-FastestV2:zap:[![DOI](https://zenodo.org/badge/386585431.svg)](https://zenodo.org/badge/latestdoi/386585431)
 ![image](https://github.com/dog-qiuqiu/Yolo-FastestV2/blob/main/img/demo.png)
 * ***Simple, fast, compact, easy to transplant***
