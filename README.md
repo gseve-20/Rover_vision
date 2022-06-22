@@ -11,7 +11,7 @@
   ```
 * Webcam test
   ```
-  python3 testYOLOCam.py --data data/coco.data --weights modelzoo/coco2017-0.241078ap-model.pth --img img/000139.jpg
+  python3 testYOLOCam.py 
   ```
 
 
