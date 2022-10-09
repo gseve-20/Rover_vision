@@ -12,7 +12,7 @@ Make sure you have Python 3.6
   ```
 * Webcam with YOLO test
   ```
-  python3 testYOLOCam.py 
+  python3 YOLOCam.py 
   ```
 
 
